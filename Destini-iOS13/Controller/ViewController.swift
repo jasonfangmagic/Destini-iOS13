@@ -32,13 +32,11 @@ class ViewController: UIViewController {
     }
     
     
-    
     func updateUI() {
         storyLabel.text = storyBrain.getNextStory()
         choice1Button.setTitle(storyBrain.buttonText1(), for: .normal)
         choice2Button.setTitle(storyBrain.buttonText2(), for: .normal)
     }
-
-
+    
 }
 
