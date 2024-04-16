@@ -42,7 +42,6 @@ struct StoryBrain {
     mutating func nextStory(_ userChoice: String) -> Int {
         let actualStory = example[storyNumber]
         let actualChoice1 = actualStory.choice1
-        let actualChoice2 = actualStory.choice2
         
         if userChoice == actualChoice1 {
             return example[storyNumber].choice1Destination
